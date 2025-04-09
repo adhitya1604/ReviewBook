@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Form Sign Up</title>
-</head>
-<body>
+@extends('layouts.master')
+@section('title')
+Register
+@endsection
+@section('content')
     <h1>Buat Account Baru</h1>
 
     <h3>Sign Up Form</h3>
@@ -53,5 +51,4 @@
 
         <input type="submit" value="Sign Up">
     </form>
-</body>
-</html>
+@endsection
