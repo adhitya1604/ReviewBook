@@ -8,7 +8,7 @@ class FormController extends Controller
 {
     public function register()
    {
-    return view('register');
+    return view('Auth.register');
    }
 
    public function welcome(Request $request)

@@ -1,16 +1,37 @@
-<footer id="footer" class="footer dark-background">
+<footer id="footer" class="footer py-4 text-center text-dark" style="background: linear-gradient(135deg, #e3f2fd, #ffffff); border-top: 1px solid #cfd8dc;">
+  <div class="container">
+    <!-- Header dengan logo -->
+    <h5 class="fw-bold text-primary mb-2">
+      <i class="bi bi-journal-bookmark-fill me-2"></i>PERPUSTAKAAN DIGITAL
+    </h5>
 
-   
+    <!-- Deskripsi -->
+    <p class="mb-2 fst-italic text-muted">Tempat terbaik untuk membaca dan berbagi pengetahuan 📚</p>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Company</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
-      </div>
+    <!-- Sosial Media Links -->
+    <div class="mb-3">
+      <a href="#" class="btn btn-outline-primary btn-sm rounded-pill mx-1" style="transition: background-color 0.3s;">
+        <i class="bi bi-facebook"></i> <!-- Facebook Icon -->
+      </a>
+      <a href="#" class="btn btn-outline-info btn-sm rounded-pill mx-1" style="transition: background-color 0.3s;">
+        <i class="bi bi-twitter"></i> <!-- Twitter Icon -->
+      </a>
+      <a href="#" class="btn btn-outline-danger btn-sm rounded-pill mx-1" style="transition: background-color 0.3s;">
+        <i class="bi bi-youtube"></i> <!-- YouTube Icon -->
+      </a>
+      <a href="#" class="btn btn-outline-success btn-sm rounded-pill mx-1" style="transition: background-color 0.3s;">
+        <i class="bi bi-whatsapp"></i> <!-- WhatsApp Icon -->
+      </a>
     </div>
 
-  </footer>
+    <!-- Footer Text -->
+    <p class="mb-0 text-secondary small">
+      &copy; <span id="year"></span> <strong>PERPUSTAKAAN</strong> — All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+<!-- Dynamic year script -->
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
